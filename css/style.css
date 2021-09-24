@@ -4,6 +4,25 @@
   --accent-color: #2196f3;
 }
 
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+  padding-left: 0;
+}
+
+img {
+  display: block;
+}
+
 body {
   font-family: "Roboto", sans-serif;
   letter-spacing: 0.03em;
@@ -22,6 +41,13 @@ body {
   display: none;
 }
 
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
 .logo {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
@@ -37,6 +63,11 @@ body {
 
 .logo-color-black {
   color: #000000;
+}
+
+.header {
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 
 .header-link {
@@ -63,7 +94,47 @@ body {
   color: var(--accent-color);
 }
 
+.header-container {
+  display: flex;
+  align-items: center;
+}
+
+.header-links {
+  display: flex;
+  align-items: center;
+}
+
+.nav-item:not(:first-child) {
+  margin-left: 50px;
+}
+.nav-item:first-child {
+  margin-left: 95px;
+}
+
+.header-contacts {
+  margin-left: auto;
+}
+
+.contacts {
+  display: flex;
+  align-items: center;
+}
+
+.list-contacts:not(:first-child) {
+  margin-left: 50px;
+}
+
+.hero-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 200px;
+  padding-bottom: 200px;
+  background-color: #2f303a;
+}
+
 .hero-title {
+  max-width: 696px;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -71,10 +142,14 @@ body {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: #ffffff;
-  background-color: #2f303a;
 }
 
 .hero-btn {
+  align-items: center;
+  /* width: 200px;
+  height: 50px; */
+  padding: 10px 32px;
+  margin-top: 30px;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
@@ -84,10 +159,25 @@ body {
   letter-spacing: 0.06em;
   color: #ffffff;
   background-color: var(--accent-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
 }
 .hero-btn:hover,
 .hero-btn:focus {
   background-color: #188ce8;
+}
+
+.hero-list {
+  display: flex;
+  padding-top: 95px;
+}
+
+.hero-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.benefits-title {
+  margin-bottom: 10px;
 }
 
 .benefits-title {
@@ -107,6 +197,34 @@ body {
   color: var(--text-color);
 }
 
+.business-title {
+  padding-top: 95px;
+  margin-bottom: 50px;
+}
+
+.business-list {
+  display: flex;
+  margin-left: -30px;
+}
+
+.business-item {
+  margin-left: 30px;
+}
+
+.team {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.team-lists {
+  margin-top: 50px;
+  display: flex;
+  margin-left: -30px;
+}
+
+.cart {
+  margin-left: 30px;
+}
+
 .title {
   font-weight: 700;
   font-size: 36px;
@@ -116,6 +234,7 @@ body {
 }
 
 .cart-title {
+  padding-top: 30px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
@@ -124,6 +243,7 @@ body {
 }
 
 .cart-text {
+  padding-top: 10px;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.19;
