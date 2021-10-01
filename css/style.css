@@ -303,6 +303,7 @@ cart-info {
   line-height: 1.19;
   text-align: center;
   color: var(--text-color);
+  padding-bottom: 30px;
 }
 
 /*portfolio*/
